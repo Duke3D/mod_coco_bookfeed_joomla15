@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.0" >
+    <name>mod_coco_bookfeed</name>
+    <author>Hagen Graf</author>
+	<creationDate>November 2011</creationDate>
+	<copyright>Copyright (C) 2011 cocoate.com</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>joomla@cocoate.com</authorEmail>
+	<authorUrl>cocoate.com</authorUrl>
+    <version>1.0.2</version>
+    <description>MOD_COCO_BOOKFEED_XML_DESCRIPTION</description>
+    <files>
+        <filename>mod_coco_bookfeed.xml</filename>
+        <filename module="mod_coco_bookfeed">mod_coco_bookfeed.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_coco_bookfeed.ini</language>
+		<language tag="en-GB">en-GB.mod_coco_bookfeed.sys.ini</language>
+		<language tag="da-DK">da-DK.mod_coco_bookfeed.ini</language>
+		<language tag="da-DK">da-DK.mod_coco_bookfeed.sys.ini</language>
+		<language tag="de-DE">de-DE.mod_coco_bookfeed.ini</language>
+		<language tag="de-DE">de-DE.mod_coco_bookfeed.sys.ini</language>
+	</languages>
+	
+
+	<params>
+		<param name="cover" type="list" default="1" label="MOD_COCO_BOOKFEED_SIZE_COVERIMG" >
+			<option value="0">MOD_COCO_BOOKFEED_SIZE_NOCOVER</option>
+			<option value="1">MOD_COCO_BOOKFEED_SIZE_SMALL</option>
+			<option value="2">MOD_COCO_BOOKFEED_SIZE_BIG</option>
+	  	</param>				
+		<param name="id" type="list" default="all" label="MOD_COCO_BOOKFEED_ID_LABEL" >
+			<option value="all">MOD_COCO_BOOKFEED_ID_ALL</option>
+			<option value="10100">Joomla! 1.7 - Begynder Guide (Danish)</option>
+			<option value="10094">Joomla! 1.7 - Beginner's Guide (English)</option>
+			<option value="10096">Joomla! 1.7 - Guía para Principiantes (Spanish)</option>
+			<option value="6621">Joomla! 1.6 - Beginner's Guide (English)</option>
+			<option value="10097">Joomla! 1.6 - Guía para Principiantes (Spanish)</option>
+	  	</param>				
+		<param name="sponsorlink" type="list" default="1" label="MOD_COCO_BOOKFEED_SPONSOR_LABEL" >
+			<option	value="0">MOD_COCO_BOOKFEED_SPONSOR_HIDE</option>
+			<option value="1">MOD_COCO_BOOKFEED_SPONSOR_SHOW</option>
+		</param>		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
