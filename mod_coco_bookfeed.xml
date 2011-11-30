@@ -31,6 +31,7 @@
 	  	</param>				
 		<param name="id" type="list" default="all" label="MOD_COCO_BOOKFEED_ID_LABEL" >
 			<option value="all">MOD_COCO_BOOKFEED_ID_ALL</option>
+			<option value="10099">Руководство для начинающего пользователя Joomla! 1.7 (Russian)</option>		
 			<option value="10100">Joomla! 1.7 - Begynder Guide (Danish)</option>
 			<option value="10094">Joomla! 1.7 - Beginner's Guide (English)</option>
 			<option value="10096">Joomla! 1.7 - Guía para Principiantes (Spanish)</option>
